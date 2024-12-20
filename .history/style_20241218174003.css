@@ -1,0 +1,25 @@
+.conteiner {
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+#topo {
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+  width: 1440px;
+  height: 475px;
+}
+
+#txt-topo {
+  margin-left: 60px;
+  font-family: "Inter", serif;
+  font-size: 60px;
+}
+
+#sub-topo {
+    
+  margin-left: 60px;
+}

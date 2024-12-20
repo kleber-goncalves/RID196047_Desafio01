@@ -1,0 +1,28 @@
+.conteiner {
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    font-size: 16px;
+}
+
+
+#topo {
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+}
+
+#txt-topo {
+    color: #FFF;
+
+    font-feature-settings: 'liga' off;
+    /* Display xl/SemiBold */
+    font-family: Inter;
+    font-size: 3.75rem;
+font-style: normal;
+font-weight: 600;
+line-height: 4.5rem; /* 120% */
+letter-spacing: -0.09375rem;
+
+}

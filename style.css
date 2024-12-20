@@ -1,0 +1,210 @@
+
+.conteiner {
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-flow: row ;
+  font-size: 16px;
+}
+
+#topo {
+  width: 100vw;
+  height: 70vh;
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+#txt-topo {
+  margin-left: 4vw;  
+  font-family: "Inter", serif;
+  color: #F9F9F9;
+  font-size: 3.75rem;
+  margin-bottom: 1.25rem;
+}
+
+#sub-topo {
+  font-family: "Inter", serif;
+  margin-left: 4vw;
+  font-size: 1.25rem;
+  color: #F9F9F9;
+  font-weight: 500;
+}
+
+#metas{
+  background-color: #F9F9F9;
+  color: black;
+  display: grid;
+  grid-auto-flow: column ;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+
+}
+
+#metas > div {
+  width: 100%;
+
+}
+
+#empreendimentos-metas > p,
+#anos-de-mercado-metas > p,
+#projetos-construídos-metas > p {
+  width: 100%; 
+  text-align: center; 
+  font-size: 1.25rem;
+
+  font-family: "Inter", serif;
+}
+
+
+article {
+  display: grid;
+  grid-auto-flow: column ;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6vw;
+}
+
+
+
+#txt-foto {
+  margin-left: 2vw;
+  margin-top: 8vh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#txt-foto > h3 {
+  font-family: Inter;
+  font-size: 2.1875rem;
+  font-weight: 600;
+  margin-bottom: 0;
+
+}
+
+#txt-foto > p {
+  font-family: "Inter", serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#formulario > button {
+  font-size: 1.875rem;
+  font-weight: 700;
+  width: 90%;
+  max-width: 17.875rem;
+  height:  4.625rem;
+  border-radius: 0.625rem ;
+  margin: 0;
+  color: #F9F9F9;
+  background-color: #C07212;
+}
+
+#formulario > input {
+  width: 140%;
+  font-size: 1.25rem;
+  max-width: 31.75rem;
+  border-radius: 0.625rem;
+  padding-left: 0.675rem;
+  height: 4.0rem;
+
+}
+
+#foter > p {
+  margin-top: 1.25rem 0;
+font-size: 2rem;
+font-weight: 700;
+color: #F9F9F9;
+text-align: center;
+
+
+}
+
+#foter {
+  width: 100%;
+  min-height: 80vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", serif;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+}
+
+
+
+/* Estilo para tablets (largura entre 768px e 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  article {
+    display: flex; /* Usa flexbox para organizar os elementos */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    gap: 3vh; /* Espaçamento entre os elementos */
+  }
+
+  #txt-foto {
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove margens externas */
+    padding: 1rem; /* Adiciona espaçamento interno */
+  }
+
+  #txt-foto > h3 {
+    font-size: 1.8rem; /* Ajusta o tamanho do título */
+    margin-bottom: 1rem; /* Adiciona espaçamento inferior */  }
+
+  #txt-foto > p {
+    font-size: 0,7rem; /* Ajusta o tamanho do parágrafo */
+    line-height: 1.5; /* Melhora o espaçamento entre as linhas */  }
+
+  #div-foto img {
+    width: 80%; /* Ajusta a largura da imagem */
+    max-width: 300px; /* Limita o tamanho máximo */
+    margin: 1rem auto; /* Centraliza e adiciona espaçamento superior/inferior */
+  }
+}
+
+
+/* Estilo para celulares (largura até 767px) */
+@media (max-width: 767px) {
+  article {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em uma única coluna */
+    align-items: center; /* Centraliza os elementos */
+    gap: 2vh; /* Reduz o espaçamento entre os elementos */
+  }
+
+  #txt-foto {
+    margin: 0 auto; /* Centraliza o texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 1rem; /* Adiciona um pouco de espaçamento interno */
+  }
+
+  #txt-foto > h3 {
+    font-size: 1.5rem; /* Reduz o tamanho do título */
+  }
+
+  #txt-foto > p {
+    font-size: 1rem; /* Diminui o tamanho do parágrafo */
+    line-height: 1.4; /* Melhora a leitura em telas menores */
+  }
+
+  #div-foto img {
+    width: 80%; /* Ajusta a imagem para ocupar menos espaço */
+    max-width: 250px; /* Limita o tamanho máximo */
+    margin: 1rem auto; /* Centraliza e adiciona espaçamento */
+  }
+}
